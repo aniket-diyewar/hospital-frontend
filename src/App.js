@@ -10,7 +10,7 @@ function App() {
   }, []);
 
   const fetchPatients = async () => {
-    const response = await axios.get("http://localhost:8080/patients");
+    const response = await axios.get("https://hospital-backend-v4o4.onrender.com/patients");
     setPatients(response.data);
   };
 
